@@ -7,6 +7,5 @@ Rakefile
 bin/nyarucode
 lib/pebbles/nyarucode.rb
 pebbles-nyarucode.gemspec
-sample.rb
 spec/nyarucode_spec.rb
 spec/spec_helper.rb
