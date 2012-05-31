@@ -1,27 +1,66 @@
 = nyarucode-ruby
 
-* http://rubygems.org/gems/pebbles-nyarucode
+* http://github.com/maraigue/nyarucode-ruby
 
 == DESCRIPTION:
 
 To convert a ruby code into "U-! Nya-!" ruby code
 (from "Haiyore! Nyaruko-san")
 
+== REQUIREMENTS:
+
+* Ruby 1.9 or newer
+
 == INSTALL:
 
   $ sudo gem install pebbles-nyarucode
 
-== FEATURES/PROBLEMS:
-
 == SYNOPSIS:
 
-  $ nyarucode path/to/sample.rb > sample-converted.rb
+  $ cat sample.rb
+  
+  #!/usr/bin/env ruby
+  # -*- coding: utf-8 -*-
+  puts "ニャル子さん"
+
+  def factorial(arg)
+    if arg <= 1
+      1
+    else
+      arg * factorial(arg - 1)
+    end
+  end
+  
+  puts factorial(5)
+  
+  $ nyarucode sample.rb > sample-converted.rb
+
+  $ cat sample-converted.rb
+  
+  #!/usr/bin/env ruby
+  # -*- coding: utf-8 -*-
+  (->(」・ω・）」うー！,（／・ω・）／にゃー！
+  ){send(」・ω・）」うー！,（／・ω・）／にゃー！)}
+  )[''<<
+  (/・ω・）/=~'うー！(/・ω・）/にゃー！')+
+  (/・ω・）/=~'うー！にゃー(/・ω・）/')*
+  ..
+  (snipped: total about 400 lines)
+  ..
+  (/・ω・）/=~'(」・ω・)」 (/・ω・）/うー！にゃー！')<<
+  (/・ω・）/=~'(」・ω・)」 (/・ω・）/うー！にゃー！')]
+    
   $ ruby sample.rb
-  $ ruby sample-converted.rb # probably be the same as the upper one
-
-== REQUIREMENTS:
-
-* Ruby 1.9 or newer
+  
+  ニャル子さん
+  120
+  
+  $ ruby sample-converted.rb # the same as the above one
+  
+  ニャル子さん
+  120
+  
+== FEATURES/PROBLEMS:
 
 == DEVELOPERS:
 
