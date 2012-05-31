@@ -9,7 +9,7 @@ To convert a ruby code into "U-! Nya-!" ruby code
 
 == INSTALL:
 
-  $ sudo gem install pebble-nyarucode
+  $ sudo gem install pebbles-nyarucode
 
 == FEATURES/PROBLEMS:
 
