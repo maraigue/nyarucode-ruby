@@ -1,11 +1,15 @@
 = nyarucode-ruby
 
-* http://rubygems.org/gems/pebble-nyarucode
+* http://rubygems.org/gems/pebbles-nyarucode
 
 == DESCRIPTION:
 
 To convert a ruby code into "U-! Nya-!" ruby code
 (from "Haiyore! Nyaruko-san")
+
+== INSTALL:
+
+  $ sudo gem install pebble-nyarucode
 
 == FEATURES/PROBLEMS:
 
@@ -18,10 +22,6 @@ To convert a ruby code into "U-! Nya-!" ruby code
 == REQUIREMENTS:
 
 * Ruby 1.9 or newer
-
-== INSTALL:
-
-  $ sudo gem install pebble-nyarucode
 
 == DEVELOPERS:
 
