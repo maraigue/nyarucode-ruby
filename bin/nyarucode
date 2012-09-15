@@ -6,7 +6,7 @@ require 'pebbles/nyarucode'
 
 def main
   if ARGV.empty?
-    STDERR.puts "Usage: nyaruko [source-file]"
+    STDERR.puts "Usage: #{$0} [source-file]"
     return
   end
   
